@@ -96,7 +96,7 @@ if page == "Prediction":
             with st.form("scenario_form"):
                 district = st.selectbox("District", artifact["districts"], help="Choose a district represented in historical training data.")
                 rainfall = st.number_input("June–September monsoon rainfall (mm)", min_value=0.0, max_value=2500.0, value=float(np.median(data.monsoon_rainfall_mm)), step=10.0, help="Enter a rainfall scenario. The app does not forecast rainfall.")
-                area = st.number_input("Cultivated area (hectares)", min_value=0.01, value=None, step=10.0, help="Optional. Leave blank if you only want yield per hectare.")
+                area = st.number_input("Cultivated area (hectares)", min_value=0.01, value=100.0, step=10.0, help="Defaults to 100 hectares. Change this to the cultivated area for your scenario.")
                 submitted = st.form_submit_button("Predict Rice Yield", type="primary", width="stretch")
             st.caption("Predictions use district identity and rainfall from the historical study period. Area is optional.")
     with right:
