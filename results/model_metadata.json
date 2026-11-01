@@ -1,0 +1,51 @@
+{
+  "data_path": "data/processed/analysis_dataset.csv",
+  "selected_model": "Ridge Regression",
+  "workflow": {
+    "stage_a": "Compare candidates on chronological holdout and grouped district CV; metrics are held-out only.",
+    "stage_b": "Refit selected candidate on every eligible observation for scenario prediction."
+  },
+  "selection_rule": "Lowest MAE on the latest-two-year chronological holdout among candidate models; predictions clipped at zero for both evaluation and inference.",
+  "temporal_holdout_years": [
+    2020,
+    2021
+  ],
+  "training_count": 91,
+  "temporal_validation_count": 26,
+  "full_dataset_count": 117,
+  "final_model_fit_count": 117,
+  "category_thresholds_kg_ha": {
+    "q25_kg_ha": 2850.0,
+    "q75_kg_ha": 3920.0,
+    "source_n": 117,
+    "definition": "Empirical 25th and 75th percentiles of all eligible historical yield observations."
+  },
+  "district_grouped_cv": "5-fold GroupKFold by district; estimates transfer to unseen districts and is reported separately, not used to select the known-district scenario model.",
+  "features": [
+    "monsoon_rainfall_mm",
+    "district"
+  ],
+  "excluded_features": {
+    "year": "Not requested by the scenario UI and would imply future-year forecasting; this app predicts a user-entered rainfall scenario.",
+    "area_ha": "Used only for optional yield-to-production conversion.",
+    "yield_calculated_kg_ha": "Derived from actual production/area and excluded to prevent target leakage."
+  },
+  "target": "yield_kg_ha",
+  "random_seed": 20261009,
+  "model_artifact": "models/riceyield_model.joblib",
+  "metrics_path": "results/ml_model_comparison.csv",
+  "versions": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "scikit-learn": "1.9.1",
+    "joblib": "1.6.0",
+    "streamlit": "1.65.0",
+    "plotly": "7.1.0"
+  },
+  "training_data_years": [
+    2013,
+    2021
+  ],
+  "nonnegative_prediction_policy": "Predictions are clipped to zero; model validation metrics apply the same clipping.",
+  "validation_limitations": "Only 26 observations in two holdout years; known districts overlap training. Grouped district CV tests unseen-district transfer separately. Small sample means metrics are uncertain and negative R\u00b2 is retained as observed."
+}

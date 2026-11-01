@@ -1,0 +1,38 @@
+.venv/
+.cache/
+__pycache__/
+.pytest_cache/
+data/raw/imd_rainfall/*.part
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/ 
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# IDE and OS
+.DS_Store
+.idea/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Logs and temporary files
+*.log
+tmp/
+
+# Large datasets and generated artifacts
+data/raw/
+models/*.pkl
+models/*.joblib

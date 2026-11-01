@@ -1,0 +1,2 @@
+input_file,input_rows,empty_rows_removed,invalid_year_rows,duplicate_district_year_records,yield_discrepancy_abs_gt_10pct,yield_outliers_iqr_rule,nonpositive_area_rows,nonpositive_production_rows,nonpositive_reported_yield_rows,missing_state,missing_district,missing_year,missing_area_ha,missing_production_tonnes,missing_yield_kg_ha,missing_yield_calculated_kg_ha,missing_yield_difference_kg_ha,negative_area_ha,negative_production_tonnes,negative_yield_kg_ha
+Rice_Data_2026-10-08 (1).csv,523,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0

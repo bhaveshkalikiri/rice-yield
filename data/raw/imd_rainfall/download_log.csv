@@ -1,0 +1,10 @@
+year,timestamp_utc,request_url,status,file,bytes,message,archive_page_years_seen
+2013,2026-10-08T10:25:58.974249+00:00,https://imdpune.gov.in/cmpg/Griddata/RF25.php [POST RF25=2013; cached locally],cached_valid,ind2013_rfp25.nc,25431832,,1901;2013
+2014,2026-10-08T10:25:58.974268+00:00,https://imdpune.gov.in/cmpg/Griddata/RF25.php [POST RF25=2014; cached locally],cached_valid,ind2014_rfp25.nc,25431832,,1901;2013
+2015,2026-10-08T10:25:58.974279+00:00,https://imdpune.gov.in/cmpg/Griddata/RF25.php [POST RF25=2015; cached locally],cached_valid,ind2015_rfp25.nc,25431832,,1901;2013
+2016,2026-10-08T10:25:58.974287+00:00,https://imdpune.gov.in/cmpg/Griddata/RF25.php [POST RF25=2016; cached locally],cached_valid,ind2016_rfp25.nc,25501500,,1901;2013
+2017,2026-10-08T10:25:58.974295+00:00,https://imdpune.gov.in/cmpg/Griddata/RF25.php [POST RF25=2017; cached locally],cached_valid,ind2017_rfp25.nc,25431832,,1901;2013
+2018,2026-10-08T10:25:58.974301+00:00,https://imdpune.gov.in/cmpg/Griddata/RF25.php [POST RF25=2018; cached locally],cached_valid,ind2018_rfp25.nc,25431832,,1901;2013
+2019,2026-10-08T10:25:58.974308+00:00,https://imdpune.gov.in/cmpg/Griddata/RF25.php [POST RF25=2019; cached locally],cached_valid,ind2019_rfp25.nc,25431832,,1901;2013
+2020,2026-10-08T10:25:58.974314+00:00,https://imdpune.gov.in/cmpg/Griddata/RF25.php [POST RF25=2020; cached locally],cached_valid,ind2020_rfp25.nc,25501500,,1901;2013
+2021,2026-10-08T10:25:58.974320+00:00,https://imdpune.gov.in/cmpg/Griddata/RF25.php [POST RF25=2021; cached locally],cached_valid,ind2021_rfp25.nc,25431832,,1901;2013
